@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   grav_force.c                                       :+:      :+:    :+:   */
+/*   handle_input.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 21:49:14 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/13 22:27:28 by jraivio          ###   ########.fr       */
+/*   Created: 2022/05/15 14:45:18 by jraivio           #+#    #+#             */
+/*   Updated: 2022/05/15 15:04:22 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <asteriod.h>
 
-t_vector	grav_force(t_object first, t_object second)
+void	add_player_vel(t_input	input)
 {
-	return((t_vector){0,0});
+	t_vector	total;
+
+	total.x = 0 + (input.right * PLAYER_ACCELERATION)
+				+ (input.left * PLAYER_ACCELERATION * -1);
+	total.y = 0 + (input.down * PLAYER_ACCELERATION)
+				+ (input.up * PLAYER_ACCELERATION * -1);
+	objects[0].velocity.x += total.x;
+	objects[0].velocity.y += total.y;
 }
 
-
+void	handle_input(t_input input)
+{
+	add_player_vel(input);
+}

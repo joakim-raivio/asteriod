@@ -1,23 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   handle_game_end.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 19:54:07 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/14 17:33:59 by jraivio          ###   ########.fr       */
+/*   Created: 2022/05/15 15:26:42 by jraivio           #+#    #+#             */
+/*   Updated: 2022/05/15 15:27:22 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <asteriod.h>
+#include <asteriod.c>
 
-int	main(void)
-{
-	init();
-	tick();
-	SDL_DestroyRenderer(rend);
-	SDL_DestroyWindow(win);
-	SDL_Quit();
-	return (0);
-}
+void	handle_game_end();

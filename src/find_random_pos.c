@@ -1,23 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   find_random_pos.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 19:54:07 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/14 17:33:59 by jraivio          ###   ########.fr       */
+/*   Created: 2022/05/14 18:25:30 by jraivio           #+#    #+#             */
+/*   Updated: 2022/05/15 00:45:46 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <asteriod.h>
 
-int	main(void)
+void	set_random_pos(int i)
 {
-	init();
-	tick();
-	SDL_DestroyRenderer(rend);
-	SDL_DestroyWindow(win);
-	SDL_Quit();
-	return (0);
+	while (1)
+	{
+		objects[i].coords.x = rand() % (WINDOW_W - objects[i].size + 1) + objects[i].size / 2;
+		objects[i].coords.y = rand() % (WINDOW_H - objects[i].size + 1) + objects[i].size / 2;
+		if (is_colliding(i) == -1)
+			return;
+	}
 }

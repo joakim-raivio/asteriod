@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   get_distance.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 19:54:07 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/14 17:33:59 by jraivio          ###   ########.fr       */
+/*   Created: 2022/05/14 19:26:19 by jraivio           #+#    #+#             */
+/*   Updated: 2022/05/14 23:11:17 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <asteriod.h>
 
-int	main(void)
+double	get_distance(t_vector first, t_vector second)
 {
-	init();
-	tick();
-	SDL_DestroyRenderer(rend);
-	SDL_DestroyWindow(win);
-	SDL_Quit();
-	return (0);
+	return (sqrt((first.x - second.x) * (first.x - second.x)
+				+(first.y - second.y) * (first.y - second.y)));
 }
