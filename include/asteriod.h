@@ -6,7 +6,7 @@
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 21:34:34 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/15 15:27:41 by jraivio          ###   ########.fr       */
+/*   Updated: 2022/05/15 16:19:08 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <SDL2/SDL_timer.h>
 # include <SDL2/SDL_image.h>
 # include <SDL2/SDL_surface.h>
+# include <SDL2/SDL_mixer.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <libft.h>
@@ -105,5 +106,7 @@ void	handle_gravity(void);
 void	move_objects(void);
 void	handle_collisions(void);
 void	handle_input(t_input input);
+void	init_texture(char *path, SDL_Texture **tex);
+void	handle_game_end(void);
 
 #endif

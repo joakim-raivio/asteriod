@@ -6,7 +6,7 @@
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 00:33:24 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/15 15:28:21 by jraivio          ###   ########.fr       */
+/*   Updated: 2022/05/15 15:37:10 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	collision(int larger, int smaller)
 		case sun:
 			hide_object(smaller);
 			g_game_end = 1;
-			if (bigger == 0)
+			if (larger == 0)
 				g_victory = 1;
 			else
 				g_victory = 0;
