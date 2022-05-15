@@ -6,7 +6,7 @@
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 18:16:46 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/15 14:33:21 by jraivio          ###   ########.fr       */
+/*   Updated: 2022/05/15 16:23:27 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ void	create_asteroid(void)
 							- objects[i].size / 2,
 						.y = objects[i].coords.y
 							- objects[i].size / 2};
-	objects[i].collision_scalar = 1;
+	objects[i].collision_scalar = 0.8;
 }

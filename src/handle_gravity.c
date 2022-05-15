@@ -6,7 +6,7 @@
 /*   By: jraivio <jraivio@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 19:21:25 by jraivio           #+#    #+#             */
-/*   Updated: 2022/05/15 00:57:01 by jraivio          ###   ########.fr       */
+/*   Updated: 2022/05/15 16:22:22 by jraivio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_vector	get_total_grav(int object_i)
 		total.x += force * cos(angle);
 		total.y += force * sin(angle);
 	}
-	printf("Force: %lf\nAngle: %lf\nDistance: %lf\nTotal: X: %lf - Y: %lf\n", force, angle, distance, total.x, total.y);
+//	printf("Force: %lf\nAngle: %lf\nDistance: %lf\nTotal: X: %lf - Y: %lf\n", force, angle, distance, total.x, total.y);
 	return (total);
 }
 
