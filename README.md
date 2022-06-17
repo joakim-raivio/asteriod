@@ -16,3 +16,5 @@ Eat smaller objects to grow. Eat the sun before the other objects to win!
 #### Controls:
 
 Arrow keys or WASD to move
+
+![](https://i.imgur.com/r4DVPo7.png)
