@@ -1,6 +1,6 @@
 # Asteriod
 
-### Asteriod is a gamejam project for Hive Helsinki built using Mac OS.
+### Asteriod is a gamejam project for Hive Helsinki built with C and SDL.
 Only tested environment is for macOS 10.14.
 
 #### Installation:
