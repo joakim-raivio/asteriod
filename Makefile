@@ -6,7 +6,7 @@ all: $(NAME)
 
 $(NAME):
 	@echo "Installing..."
-	gcc src/* -o asteriod -O3 -I include -L lib -l ft $(CFLAGS) $(LIB) -l SDL2_image-2.0.0
+	@gcc src/* -o asteriod -O3 -I include -L lib -l ft $(CFLAGS) $(LIB) -l SDL2_image-2.0.0
 	@echo "Install complete."
 
 clean:
